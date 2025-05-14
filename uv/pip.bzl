@@ -2,7 +2,7 @@
 
 load("@bazel_skylib//lib:types.bzl", "types")
 load("@bazel_skylib//rules:write_file.bzl", "write_file")
-load("//uv/private:pip.bzl", "pip_compile_test", _pip_compile = "pip_compile")
+load("//uv:pip_internal.bzl", "pip_compile_test", _pip_compile = "pip_compile")
 
 def pip_compile(
         name,

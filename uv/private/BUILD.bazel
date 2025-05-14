@@ -8,12 +8,6 @@ exports_files([
 ])
 
 bzl_library(
-    name = "pip",
-    srcs = ["pip.bzl"],
-    visibility = ["//multitool:__subpackages__"],
-)
-
-bzl_library(
     name = "venv",
     srcs = ["venv.bzl"],
     visibility = ["//multitool:__subpackages__"],
